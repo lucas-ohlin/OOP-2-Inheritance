@@ -42,11 +42,6 @@ namespace OOP2 {
             human.MakeSound();
             human.Info();
 
-            //Creating a new object using the Plant constructor
-            Console.WriteLine("\n\nRose");
-            var rose = new Rose(1, 20f, "Rose", "Red");
-            rose.Info();
-
         }
 
     }

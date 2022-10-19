@@ -36,9 +36,6 @@ namespace OOP2 {
 
         }
 
-        //Error handling, incase of a user misstype
-        public Rose() : this(0, 0f, "Null", "Null") { }
-
     }
 
 }

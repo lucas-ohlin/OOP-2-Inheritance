@@ -16,9 +16,6 @@ namespace OOP2 {
 
         }
 
-        //Error handling, incase of a user misstype
-        public Human() : this(0f, 0f, 0, "Null", "Null", false, false) { }
-
         public override void Info() {
 
             base.Info();
@@ -41,9 +38,6 @@ namespace OOP2 {
             _jump = jump;
 
         }
-
-        //Error handling, incase of a user misstype
-        public Rabbit() : this(0f, 0f, 0, "Null", "Null", false, 0f) { }
 
         public virtual void Jump() {
 
@@ -72,9 +66,6 @@ namespace OOP2 {
             _colour = colour;
 
         }
-
-        //Error handling, incase of a user misstype
-        public Katt() : this(0f, 0f, 0, "Null", "Null", false, "Null") { }
 
         public override void Info() {
 
@@ -113,9 +104,6 @@ namespace OOP2 {
             _food = food;
 
         }
-
-        //Error handling, incase of a user misstype
-        public Hund() : this(0f, 0f, 0, "Null", "Null", false, "Null", "Null") { }
 
         public virtual void Bark() {
 
