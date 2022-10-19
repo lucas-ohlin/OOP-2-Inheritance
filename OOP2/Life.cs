@@ -6,12 +6,10 @@ namespace OOP2 {
     //This is also the "main" class for all other lifeforms classes eventually derive from
     abstract class Life {
 
-        //Private because we don't need to accsess this value outside from the public Life function
         public int _age;
         
         public Life(int age) {
 
-            //This class's value
             _age = age;
 
         }
