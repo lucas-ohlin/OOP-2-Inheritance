@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OOP2 {
 
@@ -37,6 +35,9 @@ namespace OOP2 {
             : base(age, height, name, colour) {
 
         }
+
+        //Error handling, incase of a user misstype
+        public Rose() : this(0, 0f, "Null", "Null") { }
 
     }
 

@@ -24,6 +24,9 @@ namespace OOP2 {
 
         }
 
+        //Error handling, incase of a user misstype
+        public Djur() : this(0f, 0f, 0, "Null", "Null", false) { }
+
         //Virtual so we can override the class in the children classes
         public virtual void Info() {
 
@@ -60,6 +63,8 @@ namespace OOP2 {
             : base(height, weight, age, name, sound, wild) {
         }
 
+        public Reptile() : this(0f, 0f, 0, "Null", "Null", false) { }
+
     }
 
     //internal class which inherits from Djur
@@ -69,6 +74,9 @@ namespace OOP2 {
             //Sets the values to the base class's ones
             : base(height, weight, age, name, sound, wild) {
         }
+
+        //Error handling, incase of a user misstype
+        public Mammal() : this(0f, 0f, 0, "Null", "Null", false) { }
 
     }
 

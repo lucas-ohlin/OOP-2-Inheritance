@@ -17,6 +17,9 @@ namespace OOP2 {
 
         }
 
+        //Error handling, incase of a user misstype
+        public Bulldog() : this(0f, 0f, 0, "Null", "Null", false, "Null", "Null", "Null") { }
+
         public override void Bark() {
 
             Console.WriteLine(_sound);
@@ -43,6 +46,9 @@ namespace OOP2 {
             _petted = petted;
 
         }
+
+        //Error handling, incase of a user misstype
+        public Retriever() : this(0f, 0f, 0, "Null", "Null", false, "Null", "Null", 0) { }
 
         public override void Bark() {
 

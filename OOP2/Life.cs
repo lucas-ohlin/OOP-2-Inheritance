@@ -16,6 +16,9 @@ namespace OOP2 {
 
         }
 
+        //Error handling, incase of a user misstype
+        public Life() : this(0) { }
+
     }
 
 }
