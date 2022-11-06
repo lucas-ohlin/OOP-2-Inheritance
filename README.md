@@ -1,3 +1,4 @@
-# Object-Oriented Programming
-### 2nd Project
-A small project using classes with constructs and inheritence
+# Labb2 Arv
+### Object-Oriented Programming - lucas-ohlin
+A small project using classes with constructs and inheritence\
+should be structured.
