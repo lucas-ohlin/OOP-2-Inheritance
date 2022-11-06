@@ -5,7 +5,15 @@ namespace OOP2 {
     //internal class which inherits from Mammal
     internal class Human : Mammal {
 
-        public bool _doingTaxes;
+        //protected, cannot be accessed from a non-derived class from either the same assembly or a different one
+        protected bool _doingTaxes;
+
+        //Constructor to create objects with the deafault variables
+        public Human() : base(1, 2, 3, "Kalle", "Aj", false) { 
+        
+            _doingTaxes = true;
+
+        }
 
         public Human(float height, float weight, int age, string name, string sound, bool wild, bool taxes)
             //Sets the values to the base class's ones
@@ -28,7 +36,15 @@ namespace OOP2 {
     //internal class which inherits from Mammal
     class Rabbit : Mammal {
 
-        public float _jump;
+        //protected, cannot be accessed from a non-derived class from either the same assembly or a different one
+        protected float _jump;
+
+        //Constructor to create objects with the deafault variables
+        public Rabbit() : base(1, 2, 3, "Kalle", "Aj", false) {
+
+            _jump = 10;
+            
+        } 
 
         public Rabbit(float height, float weight, int age, string name, string sound, bool wild, float jump)
             //Sets the values to the base class's ones
@@ -56,7 +72,15 @@ namespace OOP2 {
     //internal class which inherits from Mammal
     class Katt : Mammal {
 
-        public string _colour;
+        //protected, cannot be accessed from a non-derived class from either the same assembly or a different one
+        protected string _colour;
+
+        //Constructor to create objects with the deafault variables
+        public Katt() : base(1, 2, 3, "Kalle", "Aj", false) {
+
+            _colour = "Red";
+            
+        }
 
         public Katt(float height, float weight, int age, string name, string sound, bool wild, string colour)
             //Sets the values to the base class's ones
@@ -92,9 +116,18 @@ namespace OOP2 {
     //internal class which inherits from Mammal
     class Hund : Mammal {
 
-        public string _race;
-        public string _food;
+        //protected, cannot be accessed from a non-derived class from either the same assembly or a different one
+        protected string _race;
+        protected string _food;
 
+        public Hund() : base(1, 2, 3, "Kalle", "Aj", false) {
+
+            _race = "Dog";
+            _food = "Food";
+        
+        }
+
+        //Constructor to create objects with the deafault variables
         public Hund(float height, float weight, int age, string name, string sound, bool wild, string ras, string food)
             //Sets the values to the base class's ones
             : base(height, weight, age, name, sound, wild) {

@@ -1,15 +1,28 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace OOP2 {
 
     //abstract class which inherits from Life
     abstract class Djur : Life {
 
-        public float _height;
-        public float _weight;
-        public string _name;
-        public string _sound;
-        public bool _wild;
+        //protected, cannot be accessed from a non-derived class from either the same assembly or a different one
+        protected float _height;
+        protected float _weight;
+        protected string _name;
+        protected string _sound;
+        protected bool _wild;
+
+        //Constructor to create objects with the deafault variables
+        public Djur () : base(2) {
+
+            _height = 1;
+            _weight = 1;
+            _name = "Kalle";
+            _sound = "AJ";
+            _wild = true;
+
+        }
 
         public Djur(float height, float weight, int age, string name, string sound, bool wild)
             //Sets the values to the base class's ones
@@ -55,6 +68,9 @@ namespace OOP2 {
     //internal class which inherits from Djur
     class Reptile : Djur {
 
+        //Constructor to create objects with the deafault variables
+        public Reptile () : base(2, 2, 2, "Bob", "Rawr", true) {}
+
         public Reptile(float height, float weight, int age, string name, string sound, bool wild)
             //Sets the values to the base class's ones
             : base(height, weight, age, name, sound, wild) {
@@ -64,6 +80,9 @@ namespace OOP2 {
 
     //internal class which inherits from Djur
     class Mammal : Djur {
+
+        //Constructor to create objects with the deafault variables
+        public Mammal () : base(2, 2, 2, "Bob", "Rawr", true) {}
 
         public Mammal(float height, float weight, int age, string name, string sound, bool wild)
             //Sets the values to the base class's ones

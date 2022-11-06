@@ -7,21 +7,21 @@ namespace OOP2 {
         private static void Main(string[] args) {
 
             //Creating a new object using the Katt constructor
-            var katt = new Katt(35f, 4f, 3, "Kitty", "Meow", false, "White");
+            Katt katt = new Katt(35f, 4f, 3, "Kitty", "Meow", false, "White");
             Console.WriteLine("Katt:");
             katt.Meow();
             katt.MakeSound();
             katt.Info();
 
             //Creating a new object using the Rabbit constructor
-            var rabbit = new Rabbit(20f, 3f, 2, "Hoppy", "Squeak", false, 2f);
+            Rabbit rabbit = new Rabbit(20f, 3f, 2, "Hoppy", "Squeak", false, 2f);
             Console.WriteLine("\n\nRabbit:");
             rabbit.Jump();
             rabbit.MakeSound();
             rabbit.Info();
 
             //Creating a new object using the Bulldog constructor
-            var bulldog = new Bulldog(30f, 15f, 4, "Bosh", "Roof!", false, "Bulldog", "Beef", "Sit");
+            Bulldog bulldog = new Bulldog(30f, 15f, 4, "Bosh", "Roof!", false, "Bulldog", "Beef", "Sit");
             Console.WriteLine("\nBulldog:");
             bulldog.Bark();
             bulldog.MakeSound();
@@ -29,7 +29,7 @@ namespace OOP2 {
             bulldog.Info();
 
             //Creating a new object using the Retriever constructor
-            var retriever = new Retriever(50f, 17f, 8, "Doggy", "Woof!", false, "Retriever", "Duck", 50);
+            Retriever retriever = new Retriever(50f, 17f, 8, "Doggy", "Woof!", false, "Retriever", "Duck", 50);
             Console.WriteLine("\nRetriever:");
             retriever.Bark();
             retriever.MakeSound();
@@ -38,9 +38,14 @@ namespace OOP2 {
 
             //Creating a new object using the Human constructor
             Console.WriteLine("\nHuman");
-            var human = new Human(190f, 70f, 40, "Karl", "Öh", false, true);
+            Human human = new Human(190f, 70f, 40, "Karl", "Öh", false, true);
             human.MakeSound();
             human.Info();
+
+            //Using the default constructor for Human
+            Console.WriteLine("\n\nDefault Contructor");
+            Human test = new Human();
+            test.Info();
 
         }
 

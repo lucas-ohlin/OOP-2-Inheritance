@@ -6,7 +6,8 @@ namespace OOP2 {
     //This is also the "main" class for all other lifeforms classes eventually derive from
     abstract class Life {
 
-        public int _age;
+        //protected, cannot be accessed from a non-derived class from either the same assembly or a different one
+        protected int _age = 0;
         
         public Life(int age) {
 
