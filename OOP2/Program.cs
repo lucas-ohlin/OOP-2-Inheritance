@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Lucas Persson Öhlin - SUT22
+using System;
 
 namespace OOP2 {
 
